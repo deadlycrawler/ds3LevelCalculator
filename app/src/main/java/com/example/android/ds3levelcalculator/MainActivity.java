@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     void Calculate() {
 
         //array for required souls per level 0 is for level 1 since no souls are required and it avoids an off by 1 error
-        int[] requiredSoulsPerLevel = {0, 673, 689, 706, 723, 740, 757, 793, 811, 829, 847, 1038, 1238,
+        int[] requiredSoulsPerLevel = {0, 673, 689, 706, 723, 740, 757, 775, 793, 811, 829, 847, 1038, 1238,
                 1445, 1659, 1882, 2113, 2353, 2601, 2857, 3122, 3395, 3678, 3969, 4270, 4580, 4899, 5228,
                 5566, 5915, 6272, 6640, 7018, 7407, 7805, 8214, 8633, 9064, 9505, 9956, 10419, 10893, 11379,
                 11876, 12384, 12904, 13435, 13979, 14535, 15102, 15682, 16274, 16879, 17497, 18127, 18770,
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             Integer requiredSouls = 0;
 
 
-            for (int i = CurrentLevel + 1; i <= TargetLevel; i++)
+            for (int i = CurrentLevel; i < TargetLevel; i++)
                 requiredSouls = requiredSouls + requiredSoulsPerLevel[i];
 
 
