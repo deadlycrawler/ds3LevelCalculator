@@ -64,18 +64,15 @@ public class MainActivity extends AppCompatActivity {
         } catch (NumberFormatException e) {
             Toast.makeText(this, "enter in a logical value for the current and target levels", Toast.LENGTH_LONG).show();
         }
-
         int supportedLevelCap = requiredSoulsPerLevel.length - 1;
 
+
+        //makes sure that levels are within parameters before running the loops
         if (TargetLevel <= supportedLevelCap) {
-
             Integer requiredSouls = 0;
-
 
             for (int i = CurrentLevel; i < TargetLevel; i++)
                 requiredSouls = requiredSouls + requiredSoulsPerLevel[i];
-
-
             //sets value of display TextView to the requiredSouls object
             display.setText(requiredSouls.toString());
 
