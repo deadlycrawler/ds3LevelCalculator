@@ -9,28 +9,45 @@
 
     <EditText
         android:id="@+id/currentLevel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned"
-        android:hint="enter current level"/>
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:hint="enter current level"
+        android:inputType="number"
+        android:textSize="30dp" />
 
     <EditText
         android:id="@+id/targetLevel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned"
-        android:hint="enter Target level"/>
+        android:layout_weight="1"
+        android:hint="enter Target level"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/calculate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="show required souls"/>
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:background="#00ffff"
+        android:text="show required souls"
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/display"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="required souls are: "/>
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:text="required souls are: "
+        android:textSize="30dp" />
 
 </LinearLayout>
