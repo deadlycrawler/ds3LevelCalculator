@@ -10,8 +10,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 230760, 233897, 237062, 240255, 243476, 246725, 250002};
 
 
-        //imports XML elements so that there values can be extacted
+        //imports XML elements so that there values can be extracted
         EditText currentLevel = (EditText) findViewById(R.id.currentLevel);
         EditText targetLevel = (EditText) findViewById(R.id.targetLevel);
         TextView display = (TextView) findViewById(R.id.display);
@@ -83,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             //if user tries to set a target Level above the current array Size, the below toast message will display
-
-
             Toast.makeText(this, "Unfortunately we only support up to level " + supportedLevelCap, Toast.LENGTH_LONG).show();
         }
     }
