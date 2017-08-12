@@ -67,8 +67,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "enter in a logical value for the current and target levels", Toast.LENGTH_LONG).show();
         }
 
+        int supportedLevelCap = requiredSoulsPerLevel.length - 1;
 
-        if (TargetLevel <= 183) {
+        if (TargetLevel <= supportedLevelCap) {
 
             Integer requiredSouls = 0;
 
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             //if user tries to set a target Level above the current array Size, the below toast message will display
 
-            int supportedLevelCap = requiredSoulsPerLevel.length - 1;
+
             Toast.makeText(this, "Unfortunately we only support up to level " + supportedLevelCap, Toast.LENGTH_LONG).show();
         }
     }
